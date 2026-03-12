@@ -15,13 +15,13 @@
 #include "../include/FreakShow.hpp"
 #include "../include/ChickenRodeo.hpp"
 #include "../include/FortuneTeller.hpp"
-// #include "FortuneTeller.cpp"
-// #include "ChickenRodeo.cpp"
-// #include "TrinketShop.cpp" // for using the trinket shop functions
-// #include "Biergarten.cpp" // for using the Biergarten functions
-// #include "PettingZoo.cpp" // for using the petting zoo functions
-// #include "CupGame.cpp" // for using the cup game functions
-// #include "FreakShow.cpp"
+#include "FortuneTeller.cpp"
+#include "ChickenRodeo.cpp"
+#include "TrinketShop.cpp" // for using the trinket shop functions
+#include "Biergarten.cpp" // for using the Biergarten functions
+#include "PettingZoo.cpp" // for using the petting zoo functions
+#include "CupGame.cpp" // for using the cup game functions
+#include "FreakShow.cpp"
 
 // Create the actual variables here
 bool acceptedShadyDeal = false;

@@ -44,7 +44,7 @@ void playCupGame() {
         }
         pause(1000);
         
-        slowPrint("\nWhich cup do you think the ball is under? (1, 2, or 3): ", 40);
+        slowPrint("\nWhich cup do you think the ball is under? (1, 2, or 3) (Press 4 to quit): ", 40);
 
         // Input validation for the cup choice, with a sarcastic remark for bad input
         bool validInput = false;
@@ -53,6 +53,9 @@ void playCupGame() {
                 slowPrint("Thats not even a number, what's wrong with you?\n", 50);
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            } else if (CupChoice == 4) {
+                slowPrint("Quitting game...\n", 50);
+                return;
             } else if (CupChoice < 1 || CupChoice > 3) {
                 slowPrint("Can you not count to three? How have you lived this long? ", 50);
             } else {
